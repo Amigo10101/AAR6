@@ -1,5 +1,0 @@
-!/.vscode/
-!/.vscode/*.json
-.venv
-.cache
-build

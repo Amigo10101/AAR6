@@ -1,3 +1,0 @@
-include(CMakeFindDependencyMacro)
-find_dependency( CUDA )
-find_dependency( CUDAToolkit )
