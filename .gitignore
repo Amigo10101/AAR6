@@ -117,3 +117,10 @@ Thumbs.db
 # Misc
 # ====================
 out/
+**/core
+*.log
+*.bak
+.cache/
+build/
+bin/
+lib/

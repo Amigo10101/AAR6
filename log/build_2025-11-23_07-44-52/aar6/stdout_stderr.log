@@ -1,4 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/joint_state_pub.dir/src/joint_state_pub.cpp.o[0m
-gmake[2]: *** [CMakeFiles/joint_state_pub.dir/build.make:76: CMakeFiles/joint_state_pub.dir/src/joint_state_pub.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joint_state_pub.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -1,1 +1,0 @@
-Invoking command in '/home/idgaf/Documents/robot/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/idgaf/Documents/robot/uros_ws/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/idgaf/Documents/robot/install/micro_ros_setup

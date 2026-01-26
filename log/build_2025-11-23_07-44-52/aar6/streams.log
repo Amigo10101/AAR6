@@ -1,5 +1,0 @@
-[0.017s] Invoking command in '/home/idgaf/Documents/robot/build/aar6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/idgaf/Documents/robot/build/aar6 -- -j16 -l16
-[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_state_pub.dir/src/joint_state_pub.cpp.o[0m
-[8.599s] gmake[2]: *** [CMakeFiles/joint_state_pub.dir/build.make:76: CMakeFiles/joint_state_pub.dir/src/joint_state_pub.cpp.o] Interrupt
-[8.599s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joint_state_pub.dir/all] Interrupt
-[8.599s] gmake: *** [Makefile:146: all] Interrupt

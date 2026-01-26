@@ -1,0 +1,98 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project Background}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Base Design Attribution}{3}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Project Objectives}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Controller Objectives}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Software Architecture}{4}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Scope}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Document Structure}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Hardware}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Robot}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Overview}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Mechanical Structure}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{Joint Configuration}{6}{section*.2}%
+\contentsline {subsubsection}{Spherical Wrist Design}{6}{section*.3}%
+\contentsline {subsubsection}{Kinematic Singularities}{6}{section*.4}%
+\contentsline {subsection}{\numberline {2.1.3}Actuators}{6}{subsection.2.1.3}%
+\contentsline {subsubsection}{Step Resolution}{7}{section*.5}%
+\contentsline {subsection}{\numberline {2.1.4}Sensors}{7}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}End Effector}{7}{subsection.2.1.5}%
+\contentsline {subsubsection}{Gripper Redesign}{7}{section*.6}%
+\contentsline {subsubsection}{Gripper Specifications}{7}{section*.7}%
+\contentsline {section}{\numberline {2.2}Control Board}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Overview}{8}{subsection.2.2.1}%
+\contentsline {subsubsection}{Key Features}{9}{section*.8}%
+\contentsline {subsection}{\numberline {2.2.2}Microcontroller}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Motor Drivers}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Power System}{10}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Connectors}{10}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Electrical Connections}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}MCU Connections}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Motor Driver Wiring}{11}{subsection.2.3.2}%
+\contentsline {subsubsection}{SPI Daisy Chain}{12}{section*.9}%
+\contentsline {subsection}{\numberline {2.3.3}Limit Switch Wiring}{12}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}MCU Firmware}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Firmware Overview}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}System Architecture}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}RTOS Tasks}{13}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Motor Control}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}TMC5160 Driver Interface}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Step Generation}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Mathematical Foundation}{14}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}The 7-Segment Profile}{15}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Implementation Strategy}{15}{subsection.3.2.5}%
+\contentsline {subsubsection}{Adaptive Deceleration}{15}{section*.10}%
+\contentsline {section}{\numberline {3.3}Communication Protocol}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Framing Structure}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Outgoing Format (MCU $\rightarrow $ PC)}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Incoming Format (PC $\rightarrow $ MCU)}{16}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Motion Control Software and Kinematics}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kinematics Theory}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Forward Kinematics}{17}{subsection.4.1.1}%
+\contentsline {subsubsection}{The Denavit-Hartenberg (DH) Convention}{18}{section*.11}%
+\contentsline {subsubsection}{Robot DH Parameters}{19}{section*.12}%
+\contentsline {subsubsection}{End-Effector Pose Extraction}{20}{section*.13}%
+\contentsline {subsection}{\numberline {4.1.2}The Jacobian Matrix}{20}{subsection.4.1.2}%
+\contentsline {subsubsection}{Geometric Jacobian Derivation}{20}{section*.14}%
+\contentsline {subsection}{\numberline {4.1.3}Singularity Handling: Selectively Damped Least Squares}{21}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Inverse Kinematics}{21}{subsection.4.1.4}%
+\contentsline {subsubsection}{Analytical Inverse Kinematics}{21}{section*.15}%
+\contentsline {paragraph}{1. Kinematic Decoupling (Wrist Center)}{21}{section*.16}%
+\contentsline {paragraph}{2. Solving for the Arm (Joints 1, 2, 3)}{22}{section*.17}%
+\contentsline {paragraph}{3. Solving for the Wrist (Joints 4, 5, 6)}{22}{section*.18}%
+\contentsline {paragraph}{4. Solution Selection and Configuration Ranking}{22}{section*.19}%
+\contentsline {subsection}{\numberline {4.1.5}Role in the Control Loop}{23}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Differential IK via Quadratic Programming: A Constraint-Aware Framework}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Introduction and Problem Formulation}{23}{subsection.4.2.1}%
+\contentsline {subsubsection}{The Kinematic Control Challenge in Modern Robotics}{23}{section*.21}%
+\contentsline {subsubsection}{Limitations of Classical Numerical Solvers}{23}{section*.22}%
+\contentsline {subsubsection}{The Optimization Paradigm: Differential QP}{24}{section*.23}%
+\contentsline {subsection}{\numberline {4.2.2}Mathematical Framework and Derivations}{24}{subsection.4.2.2}%
+\contentsline {subsubsection}{Differential Kinematics and Error Dynamics}{24}{section*.24}%
+\contentsline {paragraph}{Task-Space Error Formulation}{24}{section*.25}%
+\contentsline {paragraph}{Reference Velocity Generation}{24}{section*.26}%
+\contentsline {subsection}{\numberline {4.2.3}Differential QP-Based Inverse Kinematics (OSQP Formulation)}{25}{subsection.4.2.3}%
+\contentsline {subsubsection}{1. Optimization problem being solved}{25}{section*.27}%
+\contentsline {subsubsection}{2. Mapping to standard QP form (OSQP)}{25}{section*.28}%
+\contentsline {subsubsection}{3. Objective function mapping}{25}{section*.29}%
+\contentsline {paragraph}{3.1 Quadratic term (Hessian)}{25}{section*.30}%
+\contentsline {paragraph}{3.2 Linear term (gradient)}{25}{section*.31}%
+\contentsline {subsubsection}{4. Constraints mapping}{26}{section*.32}%
+\contentsline {paragraph}{4.1 Constraint matrix}{26}{section*.33}%
+\contentsline {paragraph}{4.2 Velocity Dampers for Joint Constraints}{26}{section*.34}%
+\contentsline {subsubsection}{5. Selectively Damped Least Squares (SDLS)}{27}{section*.35}%
+\contentsline {subsubsection}{6. Final solved QP (summary)}{27}{section*.36}%
+\contentsline {subsection}{\numberline {4.2.4}Hybrid Architecture: Topology and Global Awareness}{27}{subsection.4.2.4}%
+\contentsline {subsubsection}{Predictive Motion Lookahead}{27}{section*.37}%
+\contentsline {subsubsection}{Hysteresis-Based Branch Switching}{27}{section*.38}%
+\contentsline {subsection}{\numberline {4.2.5}Implementation and Performance Evaluation}{28}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Visualization and Control Interface}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Connection and Initialization}{28}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Control Modes and Input Methods}{29}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}System Telemetry and Visualization}{32}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Project Status: Limitations and Future Roadmap}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Hardware and Connectivity}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Kinematic and Dynamic Control}{34}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Software and Integration}{34}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {A}Source Code Repositories}{36}{appendix.A}%

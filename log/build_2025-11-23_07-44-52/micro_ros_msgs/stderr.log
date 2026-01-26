@@ -1,2 +1,0 @@
-gmake[1]: *** [CMakeFiles/Makefile2:505: CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,78 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Visualization",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/visualization/visualization",
+            "args": [
+                "../../resources/aar6/urdf/aar6.urdf"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/visualization",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake Build"
+        },
+        {
+            "name": "Run Collision Checker",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/collision_checker/test_collision_checker",
+            "args": [
+                "${workspaceFolder}/resources/aar6/urdf/aar6.urdf"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build Collision Checker"
+        },
+        {
+            "name": "Debug IK Example",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/examples/ik_example",
+            "args": [
+                "${workspaceFolder}/resources/aar6/urdf/aar6.urdf",
+                "0.3",
+                "0.1",
+                "0.4",
+                "0.707",
+                "0",
+                "0.707",
+                "0"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/examples",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build IK Example"
+        }
+    ]
+}

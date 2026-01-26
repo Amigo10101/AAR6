@@ -1,0 +1,76 @@
+digraph SystemArchitecture {
+    rankdir=LR;
+    node [shape=rectangle, style="filled,rounded", fontname="Arial", fillcolor=white, color=black];
+    compound=true;
+    fontname="Arial";
+
+    subgraph cluster_host {
+        label = "Host PC (C++/Qt)";
+        style = dashed;
+        color = blue;
+        bgcolor = "#f0f0ff";
+
+        UI [label="User Interface / Gizmo"];
+        IK [label="Kinematics Solvers\n(PositionIK / SqpIK)"];
+        PC_UART [label="Serial Communication"];
+
+        UI -> IK;
+        IK -> PC_UART;
+    }
+
+    subgraph cluster_mcu {
+        label = "MCU Firmware (STM32F446)";
+        style = dashed;
+        color = darkgreen;
+        bgcolor = "#f0fff0";
+
+        subgraph cluster_tasks {
+            label = "RTOS Tasks";
+            style = dotted;
+            UART_T [label="UART Task\n(Telemetry/Cmds)"];
+            SENS_T [label="Sensor Task\n(Idle/MUX check)"];
+        }
+
+        subgraph cluster_logic {
+            label = "Drivers & Logic";
+            style = dotted;
+            SCURVE [label="S-Curve Engine"];
+            M_CTRL [label="Motor Control Logic"];
+            TMC [label="TMC5160 Driver"];
+
+            SCURVE -> M_CTRL;
+            M_CTRL -> TMC;
+        }
+
+        subgraph cluster_isrs {
+            label = "High-Priority ISRs";
+            style = dotted;
+            TIM7 [label="TIM7 ISR\n(20kHz Update)"];
+            STEP_ISR [label="PWM Step ISR\n(Pos Tracking)"];
+        }
+
+        TIM7 -> SCURVE;
+        UART_T -> M_CTRL;
+        STEP_ISR -> M_CTRL;
+    }
+
+    subgraph cluster_hw {
+        label = "Hardware";
+        style = dashed;
+        color = orange;
+        bgcolor = "#fff0f0";
+
+        TMC_HW [label="TMC5160 Drivers"];
+        MOTORS [label="Stepper Motors\n(J1-J6)"];
+        ENCODERS [label="AS5600 Encoders"];
+
+        TMC_HW -> MOTORS;
+    }
+
+    // Connections between clusters
+    PC_UART -> UART_T [label="DMA", dir=both, color=blue, thick=true];
+    TMC -> TMC_HW [color=darkgreen, thick=true];
+    TMC_HW -> STEP_ISR [label="Pulse Feedback", color=red, style=dashed];
+    ENCODERS -> SENS_T [label="I2C", style=dotted, color=gray];
+
+}

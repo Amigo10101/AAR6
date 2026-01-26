@@ -1,1 +1,0 @@
-Invoking command in '/home/idgaf/Documents/robot/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/idgaf/Documents/robot/uros_ws/src/uros/drive_base/drive_base_msgs -DCMAKE_INSTALL_PREFIX=/home/idgaf/Documents/robot/install/drive_base_msgs

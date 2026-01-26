@@ -1,0 +1,12 @@
+# Build artifacts
+Debug/
+Release/
+bin/
+obj/
+
+# STM32CubeIDE / Eclipse local settings
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
