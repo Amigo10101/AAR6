@@ -1,0 +1,6 @@
+# MANIFEST.in
+
+recursive-include CPP/external/ik-geo/cpp/ *
+recursive-include CPP/src/ *
+prune src/eaik/examples
+prune Images
