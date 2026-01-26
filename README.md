@@ -1,6 +1,6 @@
 # AR6: 6-DOF Robotic Manipulator
 
-AR6 is a  6-DOF (Degrees of Freedom) desktop robotic arm ecosystem. This project integrates industrial-grade motion control, custom hardware design, and interactive 3D visualization into a unified platform. It is based on the open-source **PAROL6** design by Source Robotics, heavily modified with custom electronics and a robust QP-based differential controller.
+AR6 is a  6-DOF (Degrees of Freedom) desktop robotic arm ecosystem. This project integrates motion control, custom hardware design, and interactive 3D visualization into a unified platform. It is based on the open-source **PAROL6** design by Source Robotics, heavily modified with custom electronics and a robust QP-based differential controller.
 
 ![Robot View](documentation/images/robot.png) 
 
@@ -70,4 +70,3 @@ Technical reports, schematics, and academic documentation.
   - [EAIK (Eigen-based Analytical Inverse Kinematics)](https://github.com/OstermD/EAIK) - Primary analytical seeder for IK.
   - [OSQP (Operator Splitting QP Solver)](https://github.com/osqp) - Numerical optimization for differential control.
   - [FCL (Flexible Collision Library)](https://github.com/flexible-collision-library/fcl) - Real-time collision checking and environment awareness.
-- **Project Authors**: Custom Firmware, Software, and Hardware created by Anwesh Rijal.
