@@ -65,6 +65,9 @@ Technical reports, schematics, and academic documentation.
 ---
 
 ## 📜 Documentation & Attribution
-- Original mechanical design: [PAROL6 by Source Robotics](https://source-robotics.github.io/PAROL-docs/)
-- Custom Firmware/Software/Hardware: Created by Anwesh Rijal.
-
+- **Mechanical Design**: [PAROL6 by Source Robotics](https://source-robotics.github.io/PAROL-docs/)
+- **Core Libraries**:
+  - [EAIK (Eigen-based Analytical Inverse Kinematics)](https://github.com/OstermD/EAIK) - Primary analytical seeder for IK.
+  - [OSQP (Operator Splitting QP Solver)](https://github.com/osqp) - Numerical optimization for differential control.
+  - [FCL (Flexible Collision Library)](https://github.com/flexible-collision-library/fcl) - Real-time collision checking and environment awareness.
+- **Project Authors**: Custom Firmware, Software, and Hardware created by Anwesh Rijal.
