@@ -1,12 +1,12 @@
-# AR6: 6-DOF Robotic Manipulator
+# AAR6: 6-DOF Robotic Manipulator
 
-AR6 is a  6-DOF (Degrees of Freedom) desktop robotic arm ecosystem. This project integrates motion control, custom hardware design, and interactive 3D visualization into a unified platform. It is based on the open-source **PAROL6** design by Source Robotics, heavily modified with custom electronics and a robust QP-based differential controller.
+AAR6 is a  6-DOF (Degrees of Freedom) desktop robotic arm ecosystem. This project integrates motion control, custom hardware design, and interactive 3D visualization into a unified platform. It is based on the open-source **PAROL6** design by Source Robotics, heavily modified with custom electronics and a robust QP-based differential controller.
 
 ![Robot View](documentation/images/robot.png) 
 
 ## 📂 Project Structure
 
-This repository is organized as a monorepo containing all sub-systems of the AR6 robot:
+This repository is organized as a monorepo containing all sub-systems of the AAR6 robot:
 
 ### 1. [MCU Firmware (STM32)](mcu_firmware/)
 The low-level "brain" of the robot, running on an **STM32F446** microcontroller.
