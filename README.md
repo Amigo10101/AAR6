@@ -8,14 +8,14 @@ AR6 is a  6-DOF (Degrees of Freedom) desktop robotic arm ecosystem. This project
 
 This repository is organized as a monorepo containing all sub-systems of the AR6 robot:
 
-### 1. [MCU Firmware](mcu_firmware/)
+### 1. [MCU Firmware (STM32)](mcu_firmware/)
 The low-level "brain" of the robot, running on an **STM32F446** microcontroller.
 - **Real-Time Control**: Implements a 20kHz motion engine for smooth step generation.
 - **S-Curve Profiles**: Uses 7-segment S-curve trajectories to minimize jerk and vibrations.
 - **Driver Interface**: Communicates with **TMC5160** stepper drivers via SPI.
 - **Telemetry**: Streams high-frequency joint states and system health to the host PC.
 
-### 2. [URDF Standalone Controller](Robot_controller/)
+### 2. [Robot Controller (CPP/QT)](Robot_controller/)
 ![Software Interface](documentation/images/viz_main.png)
 The advanced kinematic engine and 3D visualization suite.
 - **Kinematics Engine**: High-performance Forward and Inverse Kinematics (FK/IK) implementation.
@@ -23,7 +23,7 @@ The advanced kinematic engine and 3D visualization suite.
 - **3D Visualization**: A Qt/QML based interface for real-time monitoring, gizmo-driven movement, and simulator functionality.
 - **Collision Checking**: Integrated environment awareness for safe motion planning.
 
-### 3. [Control Board](control_board/)
+### 3. [Control Board (KiCad)](control_board/)
 ![PCB Design](documentation/images/pcb.png)
 Custom PCB design (KiCad) that integrates all electronic components.
 - **Motor Control**: Supports 7× TMC5160 drivers (6 joints + 1 gripper).
