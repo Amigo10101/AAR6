@@ -15,7 +15,7 @@ The low-level "brain" of the robot, running on an **STM32F446** microcontroller.
 - **Driver Interface**: Communicates with **TMC5160** stepper drivers via SPI.
 - **Telemetry**: Streams high-frequency joint states and system health to the host PC.
 
-### 2. [URDF Standalone Controller](urdf_standalone/)
+### 2. [URDF Standalone Controller](Robot_controller/)
 ![Software Interface](documentation/images/viz_main.png)
 The advanced kinematic engine and 3D visualization suite.
 - **Kinematics Engine**: High-performance Forward and Inverse Kinematics (FK/IK) implementation.
