@@ -46,7 +46,6 @@ Technical reports, schematics, and academic documentation.
 ## 🚀 Key Features
 
 - **Singularity Robustness**: Graceful handling of wrist, shoulder, and elbow singularities using adaptive damping.
-- **Industrial Precision**: Closed-loop feedback via magnetic encoders for high-accuracy positioning.
 - **Interactive Control**: Move the robot via 3D gizmos, joint sliders, or direct Cartesian input.
 - **Optimized Communication**: 921,600 baud DMA-based serial link for low-latency host-to-MCU coordination.
 
